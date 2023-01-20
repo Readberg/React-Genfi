@@ -1,38 +1,57 @@
-.App {
-  text-align: center;
+@import url(./reset.css);
+
+:root {
+  --bg-color: #FFF9F4;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  background-color: var(--bg-color);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.app-wrapper {
+  display: grid;
+
+  grid-template-areas: 
+  "header header header"
+  "nav profile profile";
+  grid-template-rows: 60px 1fr;
+  grid-template-columns: 2fr 10fr;
+
+  max-width: 1180px;
+  margin: 0 auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.header {
+  grid-area: header;
+
+  border: 1px solid black;
 }
 
-.App-link {
-  color: #61dafb;
+.logo {
+  max-height: 35px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav {
+  grid-area: nav;
+
+  border: 1px solid black;
 }
+
+.profile {
+  grid-area: profile;
+
+  border: 1px solid black;
+
+}
+
+.profile-cover {
+  max-height: 200px;
+  width: 100%;
+}
+
+.profile-photo {
+  max-height: 120px;
+  border-radius: 50%;
+  border: 1px solid #0A0A0A;
+}
+
