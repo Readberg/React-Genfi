@@ -1,0 +1,15 @@
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.link {
+    font-weight: 600;
+    font-size: 18px;
+    color: var(--text-color);
+}
+
+.active {
+    color: var(--active-color);
+}

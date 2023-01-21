@@ -1,9 +1,10 @@
 import c from './Header.module.css'
+import Logo from '../../images/Logo.svg'
 
 function Header() {
     return (
         <header className={c.header}>
-            Genfi
+            <img src={Logo} alt="Logo" />
         </header>
     )
 }

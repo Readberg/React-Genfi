@@ -1,11 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@400;600&family=Passion+One&display=swap');
 @import url(./reset.css);
 
 :root {
   --bg-color: #FFF9F4;
+  --text-color: #0A0A0A;
+  --active-color: #E5855D;
 }
 
 * {
   background-color: var(--bg-color);
+}
+
+body {
+  font-family: 'Figtree', sans-serif;
+  color: var(--text-color);
 }
 
 .app-wrapper {
@@ -14,7 +22,7 @@
   grid-template-areas: 
   "header header header"
   "nav profile profile";
-  grid-template-rows: 60px 1fr;
+  grid-template-rows: 88px 1fr;
   grid-template-columns: 2fr 10fr;
 
   max-width: 1180px;
