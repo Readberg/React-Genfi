@@ -1,13 +1,13 @@
 import c from './Author.module.css'
 import ava from '../../../../../images/author.png';
 
-function Author() {
+function Author(props) {
     return (
         <div className={c.author}>
             <img className={c.avatar} src={ava} alt="author avatar" />
             <div>
-                <h4 className={c.name}>Tanisha</h4>
-                <p className={c.time}>5 minutes ago</p>
+                <h4 className={c.name}>{props.name}</h4>
+                <p className={c.time}>{props.time} ago</p>
             </div>
         </div>
     )
