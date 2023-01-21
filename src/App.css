@@ -21,37 +21,5 @@
   margin: 0 auto;
 }
 
-.header {
-  grid-area: header;
 
-  border: 1px solid black;
-}
-
-.logo {
-  max-height: 35px;
-}
-
-.nav {
-  grid-area: nav;
-
-  border: 1px solid black;
-}
-
-.profile {
-  grid-area: profile;
-
-  border: 1px solid black;
-
-}
-
-.profile-cover {
-  max-height: 200px;
-  width: 100%;
-}
-
-.profile-photo {
-  max-height: 120px;
-  border-radius: 50%;
-  border: 1px solid #0A0A0A;
-}
 

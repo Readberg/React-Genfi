@@ -1,6 +1,8 @@
+import c from './Header.module.css'
+
 function Header() {
     return (
-        <header className='header'>
+        <header className={c.header}>
             Genfi
         </header>
     )
