@@ -2,7 +2,12 @@ import c from "./Description.module.css";
 
 function Description() {
   return (
-    <div>Description</div>
+    <div>
+      <h3 className={c.name}>Alexandre</h3>
+      <div>
+        <p className={c.username}>@alex11</p>
+      </div>
+    </div>
   );
 }
 

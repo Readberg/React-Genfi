@@ -3,13 +3,9 @@ import Post from './Post/Post';
 
 function MyPosts() {
     return (
-        <div>
-          Posts
-          <div>
-            <textarea></textarea>
-            <button>Add post</button>
-          </div>
-          <div>
+        <div className={c.myPosts}>
+          <h2 className={c.postsTitle}>All post</h2>
+          <div className={c.posts}>
             <Post />
             <Post />
           </div>

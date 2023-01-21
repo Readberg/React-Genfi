@@ -1,0 +1,22 @@
+.myPosts {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.postsTitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 120px;
+    height: 36px;
+    padding: 6px 22px;
+    border: 1px solid #0A0A0A;  
+    border-radius: 40px;
+}
+
+.posts {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}

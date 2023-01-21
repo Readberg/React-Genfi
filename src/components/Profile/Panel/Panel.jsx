@@ -3,9 +3,9 @@ import Avatar from "../../../images/Avatar.png";
 
 function Panel() {
   return (
-    <div>
+    <div className={c.panel}>
       <img className={c.photo} src={Avatar} alt="avatar" />
-      <div className={c.edit}>Edit profile</div>
+      <button className={c.edit}>Edit profile</button>
     </div>
   );
 }
