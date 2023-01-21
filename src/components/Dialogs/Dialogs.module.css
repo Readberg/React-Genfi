@@ -1,0 +1,5 @@
+.dialogs {
+    display: grid;
+
+    grid-template-areas: "messages messages friends";  
+}

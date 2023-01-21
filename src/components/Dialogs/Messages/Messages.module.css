@@ -1,0 +1,4 @@
+.messages {
+    grid-area: messages;
+    border: 1px solid #0A0A0A;
+}
