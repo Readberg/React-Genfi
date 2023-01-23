@@ -1,15 +1,36 @@
-import c from './Chapters.module.css'
+import c from "./Chapters.module.css";
+import {NavLink} from 'react-router-dom'
 
 function Chapters() {
-    return (
-        <ul className={c.list}>
-          <li className={c.item}><a href="/profile" className={`${c.link} ${c.active}`}>Profile</a></li>
-          <li className={c.item}><a href="/feed" className={c.link}>Feed</a></li>
-          <li className={c.item}><a href="/dialogs" className={c.link}>Messages</a></li>
-          <li className={c.item}><a href="/music" className={c.link}>Music</a></li>
-          <li className={c.item}><a href="/settings" className={c.link}>Settings</a></li>
-        </ul>
-    )
+  return (
+    <ul className={c.list}>
+      <li className={c.item}>
+        <NavLink to="/profile" className={`${c.link}`}>
+          Profile
+        </NavLink>
+      </li>
+      <li className={c.item}>
+        <NavLink to="/feed" className={c.link}>
+          Feed
+        </NavLink>
+      </li>
+      <li className={c.item}>
+        <NavLink to="/dialogs" className={c.link}>
+          Messages
+        </NavLink>
+      </li>
+      <li className={c.item}>
+        <NavLink to="/music" className={c.link}>
+          Music
+        </NavLink>
+      </li>
+      <li className={c.item}>
+        <NavLink to="/settings" className={c.link}>
+          Settings
+        </NavLink>
+      </li>
+    </ul>
+  );
 }
 
 export default Chapters;

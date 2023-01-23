@@ -1,4 +1,12 @@
 .friends {
     grid-area: friends;
     border: 1px solid #0A0A0A;
+    padding: 24px 44px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.active {
+    color: #E5855D;
 }

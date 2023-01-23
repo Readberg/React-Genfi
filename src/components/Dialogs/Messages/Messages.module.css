@@ -1,4 +1,8 @@
 .messages {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 24px 44px;
     grid-area: messages;
-    border: 1px solid #0A0A0A;
+    border: 1px solid #0A0A0A;   
 }
