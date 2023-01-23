@@ -1,17 +1,26 @@
-import Friend from './Friend/Friend';
-import c from './Friends.module.css'
+import Friend from "./Friend/Friend";
+import c from "./Friends.module.css";
 
 function Friends() {
-    return (
-        <div className={c.friends}>
-            <Friend name='Roma' id='1'/>
-            <Friend name='Sasha' id='2'/>
-            <Friend name='Victor' id='3'/>
-            <Friend name='Igor' id='4'/>
-            <Friend name='Ivan' id='5'/>
-            <Friend name='Diana' id='6'/>
-        </div>
-    )
+  let friendsData = [
+    { id: 1, name: "Roman" },
+    { id: 2, name: "Sasha" },
+    { id: 3, name: "Victor" },
+    { id: 4, name: "Igor" },
+    { id: 5, name: "Ivan" },
+    { id: 6, name: "Diana" },
+  ];
+
+  return (
+    <div className={c.friends}>
+      <Friend name={friendsData[0].name} id={friendsData[0].id} />
+      <Friend name={friendsData[1].name} id={friendsData[1].id}/>
+      <Friend name={friendsData[2].name} id={friendsData[2].id} />
+      <Friend name={friendsData[3].name} id={friendsData[3].id} />
+      <Friend name={friendsData[4].name} id={friendsData[4].id} />
+      <Friend name={friendsData[5].name} id={friendsData[5].id} />
+    </div>
+  );
 }
 
 export default Friends;
