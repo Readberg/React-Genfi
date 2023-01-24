@@ -2,11 +2,11 @@ import Friends from "./Friends/Friends";
 import Messages from "./Messages/Messages";
 import c from './Dialogs.module.css'
 
-function Dialogs() {
+function Dialogs(props) {
     return (
         <div className={c.dialogs}>
-            <Messages />
-            <Friends />
+            <Messages messages={props.messages}/>
+            <Friends friend={props.friends}/>
         </div>
     )
 }

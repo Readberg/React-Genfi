@@ -5,14 +5,15 @@ import Panel from "./Panel/Panel";
 import Description from "./Description/Description";
 
 
-function Profile() {
+function Profile(props) {
+  
   return (
     <div className={c.profile}>
       <img className={c.cover} src={Cover} alt="cover" />
       <div className={c.content}>
         <Panel />
         <Description />
-        <MyPosts />
+        <MyPosts posts={props.posts}/>
       </div>
     </div>
   );
