@@ -2,7 +2,7 @@ import Friend from "./Friend/Friend";
 import c from "./Friends.module.css";
 
 function Friends() {
-  let friendsData = [
+  let friends = [
     { id: 1, name: "Roman" },
     { id: 2, name: "Sasha" },
     { id: 3, name: "Victor" },
@@ -11,16 +11,11 @@ function Friends() {
     { id: 6, name: "Diana" },
   ];
 
-  return (
-    <div className={c.friends}>
-      <Friend name={friendsData[0].name} id={friendsData[0].id} />
-      <Friend name={friendsData[1].name} id={friendsData[1].id}/>
-      <Friend name={friendsData[2].name} id={friendsData[2].id} />
-      <Friend name={friendsData[3].name} id={friendsData[3].id} />
-      <Friend name={friendsData[4].name} id={friendsData[4].id} />
-      <Friend name={friendsData[5].name} id={friendsData[5].id} />
-    </div>
-  );
+  let dialogsElements = friends.map((f) => (
+    <Friend name={f.name} id={f.id} />
+  ));
+
+  return <div className={c.friends}>{dialogsElements}</div>;
 }
 
 export default Friends;
