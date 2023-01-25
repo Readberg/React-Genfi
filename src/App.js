@@ -14,9 +14,9 @@ function App(props) {
       <Header />
       <Nav />
       <Routes>
-        <Route path='/profile' element={<Profile posts={props.posts}/>} />
+        <Route path='/profile'element={<Profile state={props.state.profile}/>} />
         <Route path='/feed' element={<Feed />} />
-        <Route path='/dialogs/*' element={<Dialogs friends={props.friends} messages={props.messages}/>} />
+        <Route path='/dialogs/*'element={<Dialogs state={props.state.dialogs} />} />
         <Route path='/music' element={<Music />} />
         <Route path='/settings' element={<SettingsPage />} />
       </Routes>

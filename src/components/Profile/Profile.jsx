@@ -6,14 +6,13 @@ import Description from "./Description/Description";
 
 
 function Profile(props) {
-  
   return (
     <div className={c.profile}>
       <img className={c.cover} src={Cover} alt="cover" />
       <div className={c.content}>
         <Panel />
         <Description />
-        <MyPosts posts={props.posts}/>
+        <MyPosts posts={props.state.posts} />
       </div>
     </div>
   );
