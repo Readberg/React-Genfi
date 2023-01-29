@@ -5,4 +5,28 @@
     padding: 24px 44px;
     grid-area: messages;
     border: 1px solid #0A0A0A;   
+    justify-content: flex-end;
+}
+
+.addMessage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.messageText {
+    border: 1px solid #0A0A0A;
+    border-radius: 8px;
+    width: 80%;
+    padding: 5px;
+    resize: none;
+}
+
+.messageBtn {
+    border: 1px solid #0A0A0A;
+    width: 50px;
+    border-radius: 5px;
+    background: #0A0A0A;
+    color: var(--bg-color);
 }
